@@ -1,0 +1,1 @@
+Find all the details at <a href="https://www.tensorflow.org/get_started/get_started" target="_blank">'Getting Started With TensorFlow'</a>
