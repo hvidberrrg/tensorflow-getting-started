@@ -56,9 +56,8 @@ print("eval metrics: %r"% eval_metrics)
 x_predict = np.array([10., 42.]) #  =>  ~ -9, -41
 predict_input_fn = tf.estimator.inputs.numpy_input_fn(
     {"x": x_predict},
-    shuffle=False
-    )
+    shuffle=False)
+
 predicted_values = estimator.predict(input_fn=predict_input_fn)
 predictions = [p["predictions"] for p in predicted_values]
 print("predictions: ", predictions)
-
