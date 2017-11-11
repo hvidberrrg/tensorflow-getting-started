@@ -1,1 +1,1 @@
-Find all the details at <a href="https://www.tensorflow.org/get_started/get_started" target="_blank">'Getting Started With TensorFlow'</a>
+The files in this directory relates to <a href="https://www.tensorflow.org/get_started/get_started" target="_blank">'Getting Started With TensorFlow'</a>
