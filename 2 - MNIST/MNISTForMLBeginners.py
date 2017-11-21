@@ -27,7 +27,7 @@ y = tf.nn.softmax(tf.matmul(x, W) + b) # multiply x by W, add b, and finally app
 #####################
 # In order to train the model we first need to define how far off our model is from our desired outcome - this is called the loss.
 # By training we try to minimize the loss.
-# y , defined above, is our predicted probability distribution, and y′ is the true distribution.
+# y, defined above, is our predicted probability distribution, and y′ is the true distribution.
 # First add a new placeholder to input the correct answers y':
 y_ = tf.placeholder(tf.float32, [None, 10])
 # Then we can implement the cross-entropy function, −∑y′log(y), measuring how inefficient our predictions are for describing the truth.:
@@ -56,13 +56,3 @@ correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 # Finally, we ask for the accuracy on our test data.
 print(sess.run(accuracy, feed_dict={x: mnist.test.images, y_: mnist.test.labels}))
-
-
-
-
-
-
-
-
-
-
